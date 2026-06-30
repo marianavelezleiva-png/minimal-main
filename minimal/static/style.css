@@ -1,0 +1,663 @@
+/* ==========================================
+   ECOFUTURE AI
+   ESTILO PRINCIPAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#eef8fb;
+
+    color:#1d3557;
+
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+
+    background:rgba(8,28,45,.95)!important;
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    padding:15px 0;
+
+}
+
+.navbar-brand{
+
+    color:white!important;
+
+    font-size:1.7rem;
+
+    font-weight:700;
+
+}
+
+.nav-link{
+
+    color:white!important;
+
+    margin-left:20px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#72ffbf!important;
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+    135deg,
+    #051923,
+    #0d3b66,
+    #1b998b
+    );
+
+}
+
+.hero-text h1{
+
+    font-size:4.6rem;
+
+    color:white;
+
+    font-weight:800;
+
+}
+
+.hero-text h2{
+
+    color:#8df8cb;
+
+    margin:20px 0;
+
+}
+
+.hero-text p{
+
+    color:white;
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+}
+
+/* ==========================
+   PLANETA
+========================== */
+
+.earth{
+
+    width:170px;
+
+    max-width:100%;
+
+    animation:floatPlanet 5s ease-in-out infinite;
+
+    filter:drop-shadow(0 0 20px rgba(0,170,255,.4));
+
+}
+
+@keyframes floatPlanet{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+/* ==========================
+   TARJETA AL LADO DEL PLANETA
+========================== */
+
+.fact-card{
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:22px;
+
+    margin-top:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+.fact-card h3{
+
+    color:#169c63;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.fact-card ul{
+
+    padding-left:20px;
+
+}
+
+.fact-card li{
+
+    margin-bottom:15px;
+
+    line-height:1.7;
+
+    color:#555;
+
+}
+
+/* ==========================
+   BOTONES
+========================== */
+
+.btn-success{
+
+    background:#18b56d;
+
+    border:none;
+
+    border-radius:40px;
+
+    padding:14px 36px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-success:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(24,181,109,.35);
+
+}
+
+.btn-outline-light{
+
+    border-radius:40px;
+
+    padding:14px 36px;
+
+}
+
+/* ==========================
+   SECCIONES
+========================== */
+
+.info-section{
+
+    padding:90px 0;
+
+    background:#eef8fb;
+
+}
+
+.stats-section{
+
+    padding:90px 0;
+
+    background:white;
+
+}
+
+/* ==========================
+   TARJETAS
+========================== */
+
+.feature-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    height:100%;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,150,120,.15);
+
+}
+
+.icon{
+
+    font-size:3.5rem;
+
+    margin-bottom:18px;
+
+}
+
+.feature-card h4{
+
+    color:#0d4f6f;
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#566573;
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   FORMULARIOS
+========================== */
+
+.card{
+
+    border:none;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.form-label{
+
+    color:#184e77;
+
+    font-weight:600;
+
+}
+
+.form-select{
+
+    border-radius:12px;
+
+    padding:12px;
+
+}
+
+.form-select:focus{
+
+    box-shadow:0 0 0 .2rem rgba(24,181,109,.25);
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    background:#082032;
+
+    color:white;
+
+    padding:50px 0;
+
+}
+
+footer h4{
+
+    color:#78ffca;
+
+}
+
+footer p{
+
+    color:#e2e2e2;
+
+}
+
+footer small{
+
+    color:#b9c6cf;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+padding:120px 0 70px;
+
+}
+
+.hero-text h1{
+
+font-size:3rem;
+
+}
+
+.hero-text h2{
+
+font-size:1.4rem;
+
+}
+
+.earth{
+
+width:140px;
+
+margin-top:25px;
+
+}
+
+.fact-card{
+
+margin-top:30px;
+
+}
+
+}
+
+/*==================================
+      ECO SCORE
+==================================*/
+
+.score-circle{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#14b866,#34d399);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 15px 35px rgba(20,184,102,.35);
+
+}
+
+.score-circle span{
+
+    color:white;
+
+    font-size:3.8rem;
+
+    font-weight:bold;
+
+}
+
+/*=============================
+ANIMACIONES
+=============================*/
+
+.hero-text{
+
+    animation:fadeLeft 1s ease;
+
+}
+
+.earth{
+
+    animation:floatPlanet 5s ease-in-out infinite,
+              fadeRight 1s ease;
+
+}
+
+.feature-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+        transform:translateX(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+        transform:translateX(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.feature-card{
+
+    overflow:hidden;
+    position:relative;
+
+}
+
+.feature-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    transition:.8s;
+
+}
+
+.feature-card:hover::before{
+
+    left:120%;
+
+}
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px) scale(1.03);
+
+}
+
+/*========================================
+SOMBRAS Y EFECTOS MODERNOS
+========================================*/
+
+.feature-card{
+
+    border:0;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:all .35s ease;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(22,179,107,.25);
+
+}
+
+.card{
+
+    border:none;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+
+}
+
+.form-select{
+
+    border-radius:15px;
+
+    padding:14px;
+
+    transition:.3s;
+
+}
+
+.form-select:focus{
+
+    border-color:#16b36b;
+
+    box-shadow:0 0 0 .2rem rgba(22,179,107,.25);
+
+}
+
+.btn-success{
+
+    background:#16b36b;
+
+    border:none;
+
+}
+
+.btn-success:hover{
+
+    background:#11965a;
+
+}
+
+.btn-outline-success{
+
+    border-radius:30px;
+
+}
+
+h1,h2,h3,h4{
+
+    font-weight:700;
+
+}

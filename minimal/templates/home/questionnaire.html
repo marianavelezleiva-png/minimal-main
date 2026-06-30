@@ -1,0 +1,224 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="container py-5 mt-5">
+
+    <div class="text-center mb-5">
+
+        <h1 class="display-3 fw-bold text-success">
+            🌿 EcoScore
+        </h1>
+
+        <h4 class="text-secondary">
+            Descubre qué tan sostenibles son tus hábitos diarios
+        </h4>
+
+        <p class="lead mt-3">
+            Responde las siguientes preguntas. Al finalizar obtendrás tu EcoScore
+            junto con recomendaciones personalizadas para ayudar al planeta.
+        </p>
+
+    </div>
+
+    <div class="card p-5">
+
+        <form action="/result" method="POST">
+
+            <div class="mb-4">
+
+                <label class="form-label fw-bold">
+                    💡 1. ¿Apagas las luces cuando sales de una habitación?
+                </label>
+
+                <select class="form-select" name="q1" required>
+
+                    <option value="">Selecciona una opción</option>
+                    <option value="10">✅ Siempre</option>
+                    <option value="7">🙂 Casi siempre</option>
+                    <option value="4">😐 Algunas veces</option>
+                    <option value="0">❌ Nunca</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label fw-bold">
+                    🚿 2. ¿Cierras el grifo mientras te cepillas los dientes?
+                </label>
+
+                <select class="form-select" name="q2" required>
+
+                    <option value="">Selecciona una opción</option>
+                    <option value="10">✅ Siempre</option>
+                    <option value="7">🙂 Casi siempre</option>
+                    <option value="4">😐 Algunas veces</option>
+                    <option value="0">❌ Nunca</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label fw-bold">
+                    ♻️ 3. ¿Reciclas papel, plástico y vidrio?
+                </label>
+
+                <select class="form-select" name="q3" required>
+
+                    <option value="">Selecciona una opción</option>
+                    <option value="10">✅ Siempre</option>
+                    <option value="7">🙂 Casi siempre</option>
+                    <option value="4">😐 Algunas veces</option>
+                    <option value="0">❌ Nunca</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label fw-bold">
+                    🛍️ 4. ¿Utilizas bolsas reutilizables?
+                </label>
+
+                <select class="form-select" name="q4" required>
+
+                    <option value="">Selecciona una opción</option>
+                    <option value="10">✅ Siempre</option>
+                    <option value="7">🙂 Casi siempre</option>
+                    <option value="4">😐 Algunas veces</option>
+                    <option value="0">❌ Nunca</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label fw-bold">
+                    🚲 5. ¿Caminas o utilizas bicicleta cuando puedes?
+                </label>
+
+                <select class="form-select" name="q5" required>
+
+                    <option value="">Selecciona una opción</option>
+                    <option value="10">✅ Siempre</option>
+                    <option value="7">🙂 Casi siempre</option>
+                    <option value="4">😐 Algunas veces</option>
+                    <option value="0">❌ Nunca</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label fw-bold">
+                    🔌 6. ¿Desconectas los cargadores cuando no los utilizas?
+                </label>
+
+                <select class="form-select" name="q6" required>
+
+                    <option value="">Selecciona una opción</option>
+                    <option value="10">✅ Siempre</option>
+                    <option value="7">🙂 Casi siempre</option>
+                    <option value="4">😐 Algunas veces</option>
+                    <option value="0">❌ Nunca</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label fw-bold">
+                    🌳 7. ¿Participas en actividades para cuidar el medio ambiente?
+                </label>
+
+                <select class="form-select" name="q7" required>
+
+                    <option value="">Selecciona una opción</option>
+                    <option value="10">✅ Siempre</option>
+                    <option value="7">🙂 Casi siempre</option>
+                    <option value="4">😐 Algunas veces</option>
+                    <option value="0">❌ Nunca</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label fw-bold">
+                    🥤 8. ¿Evitas comprar productos con mucho plástico?
+                </label>
+
+                <select class="form-select" name="q8" required>
+
+                    <option value="">Selecciona una opción</option>
+                    <option value="10">✅ Siempre</option>
+                    <option value="7">🙂 Casi siempre</option>
+                    <option value="4">😐 Algunas veces</option>
+                    <option value="0">❌ Nunca</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label fw-bold">
+                    🌎 9. ¿Compartes consejos ambientales con otras personas?
+                </label>
+
+                <select class="form-select" name="q9" required>
+
+                    <option value="">Selecciona una opción</option>
+                    <option value="10">✅ Siempre</option>
+                    <option value="7">🙂 Casi siempre</option>
+                    <option value="4">😐 Algunas veces</option>
+                    <option value="0">❌ Nunca</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-5">
+
+                <label class="form-label fw-bold">
+                    💚 10. ¿Consideras importante cuidar el planeta todos los días?
+                </label>
+
+                <select class="form-select" name="q10" required>
+
+                    <option value="">Selecciona una opción</option>
+                    <option value="10">✅ Sí, totalmente</option>
+                    <option value="7">🙂 Bastante</option>
+                    <option value="4">😐 Un poco</option>
+                    <option value="0">❌ No mucho</option>
+
+                </select>
+
+            </div>
+
+            <div class="text-center">
+
+                <button class="btn btn-success btn-lg px-5">
+
+                    🌍 Calcular mi EcoScore
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

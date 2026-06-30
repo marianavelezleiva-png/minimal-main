@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="container py-5 mt-5">
+
+    {% if score is not none %}
+
+    <div class="card p-5 text-center">
+
+        <h1 class="display-4 fw-bold mb-4">
+
+            🌍 Tu EcoScore
+
+        </h1>
+
+        <div class="score-circle mx-auto mb-4">
+
+            <span>
+
+                {{ score }}
+
+            </span>
+
+        </div>
+
+        <h2 class="text-{{ color }} fw-bold">
+
+            {{ nivel }}
+
+        </h2>
+
+        <p class="lead mt-3">
+
+            {{ mensaje }}
+
+        </p>
+
+        <hr class="my-5">
+
+        <h3 class="mb-4">
+
+            💡 Recomendaciones para mejorar
+
+        </h3>
+
+        <div class="row g-4">
+
+            {% for recomendacion in recomendaciones %}
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <div class="icon">
+
+                        🌱
+
+                    </div>
+
+                    <p>
+
+                        {{ recomendacion }}
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        <div class="mt-5">
+
+            <a href="/questionnaire"
+               class="btn btn-success btn-lg me-3">
+
+                🔄 Volver a intentar
+
+            </a>
+
+            <a href="/about"
+               class="btn btn-outline-success btn-lg">
+
+                📖 Aprender más
+
+            </a>
+
+        </div>
+
+    </div>
+
+    {% else %}
+
+    <div class="card p-5 text-center">
+
+        <h2>
+
+            🌱 Primero debes completar el cuestionario.
+
+        </h2>
+
+        <p class="mt-3">
+
+            Responde las preguntas para calcular tu EcoScore.
+
+        </p>
+
+        <a href="/questionnaire"
+           class="btn btn-success btn-lg mt-4">
+
+            Ir al cuestionario
+
+        </a>
+
+    </div>
+
+    {% endif %}
+
+</section>
+
+{% endblock %}

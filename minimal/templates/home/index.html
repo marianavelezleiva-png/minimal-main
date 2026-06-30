@@ -1,0 +1,308 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center gy-5">
+
+            <div class="col-lg-6 hero-text">
+
+                <h1>
+                    EcoFuture
+                </h1>
+
+                <h2>
+                    Construyendo un futuro más sostenible
+                </h2>
+
+                <p>
+
+                    Conoce la importancia de cuidar el medio ambiente,
+                    evalúa tus hábitos sostenibles y descubre acciones
+                    sencillas que pueden contribuir a un planeta más
+                    saludable para todos.
+
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="/questionnaire"
+                       class="btn btn-success btn-lg me-3">
+
+                        🌱 Comenzar evaluación
+
+                    </a>
+
+                    <a href="/about"
+                       class="btn btn-outline-light btn-lg">
+
+                        Conocer más
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 text-center">
+
+                <img
+                    src="{{ url_for('static', filename='images/earth.png') }}"
+                    class="earth"
+                    alt="Planeta Tierra">
+
+                <div class="fact-card mt-4">
+
+                    <h3>
+
+                        🌍 ¿Por qué cuidar el planeta?
+
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            🌳 Los bosques producen gran parte del oxígeno que respiramos.
+                        </li>
+
+                        <li>
+                            💧 El agua dulce es un recurso limitado que debemos proteger.
+                        </li>
+
+                        <li>
+                            🐢 Miles de especies dependen de ecosistemas saludables.
+                        </li>
+
+                        <li>
+                            🌎 Cuidar el planeta mejora la calidad de vida de las personas.
+                        </li>
+
+                        <li>
+                            💚 Cada pequeña acción cuenta para construir un mejor futuro.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="info-section">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">
+
+            Nuestro compromiso
+
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <div class="icon">
+
+                        🌱
+
+                    </div>
+
+                    <h4>
+
+                        Educación Ambiental
+
+                    </h4>
+
+                    <p>
+
+                        Promovemos el aprendizaje sobre el cuidado del planeta
+                        mediante información clara y consejos prácticos.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <div class="icon">
+
+                        ♻️
+
+                    </div>
+
+                    <h4>
+
+                        Hábitos sostenibles
+
+                    </h4>
+
+                    <p>
+
+                        Pequeñas acciones diarias pueden ayudar a reducir
+                        el impacto ambiental y proteger los recursos naturales.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <div class="icon">
+
+                        🌎
+
+                    </div>
+
+                    <h4>
+
+                        Futuro Verde
+
+                    </h4>
+
+                    <p>
+
+                        Nuestro objetivo es inspirar a más personas
+                        a cuidar el medio ambiente para las futuras generaciones.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats-section">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">
+
+            Datos interesantes
+
+        </h2>
+
+        <div class="row text-center g-4">
+
+            <div class="col-md-3">
+
+                <div class="feature-card">
+
+                    <h1>🌳</h1>
+
+                    <h4>
+
+                        Bosques
+
+                    </h4>
+
+                    <p>
+
+                        Los bosques ayudan a regular el clima
+                        y son el hogar de miles de especies.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="feature-card">
+
+                    <h1>💧</h1>
+
+                    <h4>
+
+                        Agua
+
+                    </h4>
+
+                    <p>
+
+                        Ahorrar agua hoy ayuda a garantizar
+                        este recurso para el futuro.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="feature-card">
+
+                    <h1>♻️</h1>
+
+                    <h4>
+
+                        Reciclaje
+
+                    </h4>
+
+                    <p>
+
+                        Separar correctamente los residuos
+                        disminuye la contaminación.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="feature-card">
+
+                    <h1>🌍</h1>
+
+                    <h4>
+
+                        Planeta
+
+                    </h4>
+
+                    <p>
+
+                        Cuidar el medio ambiente es una responsabilidad
+                        de todas las personas.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
